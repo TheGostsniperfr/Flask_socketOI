@@ -1,0 +1,315 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+@font-face {
+    font-family: "Squid-Game";
+    src: url("../fonts/GameOfSquids.ttf") format("woff2");
+}
+
+/** NAVIGATION BAR */
+
+#navbar {
+    background-color: #333;
+    width: 100%;
+
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    padding: 20px;
+
+    /* bootstrap de m*rde */
+    margin-bottom: 0px !important;
+}
+
+li {
+    display: inline;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    padding: 50px;
+
+}
+
+.etiquettes {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px;
+}
+
+a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Tv container*/
+
+.home_container {
+    background-size:cover;
+    height: 100vh;
+    z-index: 1;
+    padding: 3%;
+    position: relative;
+    background-image: url('../pictures/backgr.png');
+    background-repeat: repeat;
+}
+
+
+.tele_container {
+    z-index: 2;
+    left: 3%;
+
+    background-image: url('../pictures/tele.png');
+    background-repeat: no-repeat;
+    width: 1220px;
+    height: 764px;
+    
+}
+
+.tele_display {
+    position: relative;
+    padding-top: 105px;
+    padding-left: 152px;
+
+}
+
+#play_button_container{
+    position: absolute;
+    visibility: visible;
+}
+
+
+
+
+#gif_home {
+    position: absolute;
+    display: block;
+    width: 680px;
+    height: 540px;
+    z-index: -1;
+
+}
+
+#gif_home:hover {
+    filter: blur(5px);
+
+}
+
+/* play button */ 
+
+#play_button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+    height: 540px;
+    text-align: center;
+
+}
+
+#play_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 75px;
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#play_button:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+#play_button_text{
+    position: absolute;
+
+    margin: auto;
+
+}
+
+#play_button_statu{
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 100px;
+
+}
+
+/* Score board */
+table {
+    position: absolute;
+    caption-side: top;
+    top: 15px;
+    top: 11%;
+    right: 8%;
+}
+
+caption {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+caption {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/* footer */
+.foother_container{
+    color: white;
+    text-align: center;
+    background-color: #111;
+}
+
+.foother_github a img{
+    width: 35px;
+}
+
+
+/* page rule*/ 
+
+.rule_container{
+    background-size:cover;
+    height: 100vh;
+    text-align: center;
+    font-size: 2em;
+    background-image: url('../pictures/backgr.png');
+    background-repeat: repeat;
+    color: white;
+}
+
+#rule_title{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+
+
+/* page sign-up */
+
+.background_sign{
+    background-size:cover;
+    padding-top: 1%;
+    height: 100vh;
+    background-image: url('../pictures/backgr.png');
+    background-repeat: repeat;
+}
+
+
+
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+/* Bordered form */
+form {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+}
+
+#container h1 {
+    width: 38%;
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Squid-Game, serif;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
+input[type=submit],
+input[type=button] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+
+input[type=button]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+#body{
+    background-size:cover;
+    height: 100vh;
+    padding-top: 1%;
+    background-image: url('../pictures/backgr.png');
+    background-repeat: repeat;
+}
+
+.myaccount{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+}
+
+.du{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: serif;
+    font-family: Squid-Game, serif;
+}
+
+.duu{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: serif;
+}
